@@ -1,0 +1,46 @@
+.timer {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    text-align: center;
+}
+
+.timer__item {
+    flex: 0 0 80px;
+   
+}
+
+.timer__unit {
+    background-color: #A3B6C7;
+    border-radius: 6px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+.timer__unit-description {
+    font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+    .timer {
+        gap: 8px;
+    }
+
+    .timer__item {
+        flex-basis: 120px;
+       
+    }
+
+    .timer__unit {
+        font-size: 40px;
+        padding: 11px;
+        margin-bottom: 8px;
+    }
+
+    .timer__unit-description {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.modal_open {
+    display: flex;
+}
+
+.modal__wrapper {
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px 15px;
+}
+
+.modal__title {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+    .modal__wrapper {
+        padding: 60px 40px 80px;
+    }
+
+    .modal__title {
+        font-size: 40px;
+        margin-bottom: 48px;
+    }
+}
