@@ -90,7 +90,7 @@ const showPrice = (currency = 'USD') => {
     const priceElems = document.querySelectorAll('[data-price');
 
     priceElems.forEach(elem => {
-        elem.textContent = formatCurrency(elem.dataset.price * dataCurrency[currency], currency);
+        elem.textContent = formatCurrency(elem.data.price * dataCurrency[currency], currency);
     })
 }
 //api для работы с онлайн курсом валют 
@@ -101,7 +101,7 @@ myHeaders.append("apikey", "oTI6FN5MaJwS2FW7fsMvQKZJGzqE6Alc");
 const requestOptions = {
   method: 'GET',
   redirect: 'follow',
-  headers: myHeaders
+  headers: myHeaders,
 };
 
 fetch("https://api.apilayer.com/fixer/latest?base=USD", requestOptions)
